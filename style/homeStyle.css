@@ -1,3 +1,4 @@
+/* Main styling */
 *{
     margin: 0;
     padding: 0;
@@ -9,17 +10,6 @@ html, body{
     width: 100%;
     font-family: 'Raleway', sans-serif;
     background: black;
-}
-
-.nav-images{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-images img{
-    height: 250px;
 }
 
 header{
@@ -46,6 +36,11 @@ header{
     opacity: 0.7;
 }
 
+.heading{
+    color: #BD533E;
+}
+
+/* Styling for the top nav bar */
 nav{
     background-color: #FAEDDC;
     z-index: 2;
@@ -79,6 +74,7 @@ nav{
     position: relative;
 }
 
+/* Styling for the open nav bar */
 .nav-open{
     position: absolute;
     width: 40%;
@@ -97,15 +93,12 @@ nav{
     cursor: pointer;
 }
 
-.heading{
-    color: #BD533E;
-}
-
 .nav-links li a{
     text-decoration: none;
     color: #585250;
 }
 
+/* Subheadings */
 .headings{
     width: 100%;
     display: flex;
@@ -129,3 +122,5 @@ nav{
     text-decoration: none;
     color: #585250;
 }
+
+
