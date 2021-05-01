@@ -77,3 +77,39 @@
 #radio5:checked ~ .first{
     margin-left: -80%;
 }
+
+/* auto slider */
+.nav-auto{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 455px;
+}
+.nav-auto div{
+    border: 2px solid #BD533E;
+    opacity: 85%;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background: #BD533E;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background: #BD533E;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background: #BD533E;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background: #BD533E;
+}
+#radio5:checked ~ .nav-auto .auto-btn5{
+    background: #BD533E;
+}

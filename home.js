@@ -29,3 +29,14 @@ navButton.addEventListener("click", ()=>{
 function toggleTween(tween){
     tween.reversed() ? tween.play() : tween.reverse();
 }
+
+var counter = 1
+
+setInterval(function(){
+    document.getElementById('radio'+counter).checked = true;
+    counter++;
+    if(counter>5){
+        counter=1;
+    }
+}, 4000);
+
