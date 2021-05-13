@@ -12,8 +12,8 @@ tl.to(".cover", 1,{
 }, "-=0.2")
 .fromTo('.nav-open', 0.5,{
     opacity: 0,
-    x: 50,
-    ease: Power2.easeOut
+    x: -50,
+    ease: Power2.easeOut,
 },{
     opacity: 1,
     x:  0,
@@ -22,8 +22,22 @@ tl.to(".cover", 1,{
     }
 });
 
+var timeline = anime({
+    targets: '.line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    duration: 1800,
+    easing: "easeOutExpo",
+    delay: 1200,
+    autoplay: false,
+});
+
+timeline.reverse();
+
 navButton.addEventListener("click", ()=>{
     toggleTween(tl);
+    timeline.play();
+    timeline.reverse();
 });
 
 function toggleTween(tween){

@@ -1,0 +1,16 @@
+/* Main styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background: #f5b892;
+    background: linear-gradient(157deg,#f5b892 7%, #ffdcb9 55%, #f7dfc8 80%);
+    background: -webkit-linear-gradient(157deg,#f5b892 7%, #ffdcb9 55%, #f7dfc8 80%);
+    background: -moz-linear-gradient(157deg,#f5b892 7%, #ffdcb9 55%, #ecc4da 80%);
+}
